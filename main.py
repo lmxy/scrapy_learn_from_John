@@ -18,8 +18,9 @@ data = soup.select('tbody > tr ')
 dl = {}
 wr = []
 for x in data:
-    name = x.select('tr > td:nth-child(2) > a:nth-child(2)')[0].text
-    magnet = x.select('tr > td:nth-child(3) > a:nth-child(2)')['href']
+    name = x.select('tr > td:nth-child(2) > a:nth-child(2)')[0].text.split("]", 2)[1].strip('- English Softsubs')
+    magnet = x.select('tr > td:nth-child(3) > a:nth-child(2)')[0]['href']
+
     dl = {
         'name': name,
         'magnet': magnet
