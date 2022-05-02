@@ -4,13 +4,13 @@
 # @File : test_strings.py
 # @Software : PyCharm
 import os,shutil
-
+from pathlib import Path
 name = 'Komi-san wa, Komyushou Desu. Part 2'
 
 dir = 'D:\\anime202204'
 
-os.mkdir(os.path.join(dir, name))
-# if str1 in str2:
-#     print('str in str2')
-# else:
-#     print('not find')
+filename = 'test\\111.html'
+
+current_dir = os.getcwd()
+
+print(os.path.isfile('test\\111.html'))
