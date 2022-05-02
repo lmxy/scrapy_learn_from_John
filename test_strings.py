@@ -8,9 +8,10 @@ from pathlib import Path
 name = 'Komi-san wa, Komyushou Desu. Part 2'
 
 dir = 'D:\\anime202204'
+p = Path(dir)
 
-filename = 'test\\111.html'
+anime_folder_names = [f.name for f in Path(dir).iterdir() if f.is_dir()]
 
-current_dir = os.getcwd()
+print(len(anime_folder_names))
+print(anime_folder_names)
 
-print(os.path.isfile('test\\111.html'))
