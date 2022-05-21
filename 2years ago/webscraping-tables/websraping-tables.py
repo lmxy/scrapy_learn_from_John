@@ -9,6 +9,7 @@ import pandas as pd
 
 
 url = 'https://www.skysports.com/premier-league-table'
+url1 = 'https://www.skysports.com/championship-table'
 
 def get_league_talbe(url):
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"}
